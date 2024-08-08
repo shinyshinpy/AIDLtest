@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">testActivity</string>
+    <string name="StartServiceButtonTxt">start service</string>
+    <string name="CallAidlApiButtonTxt">Call AIDL API</string>
+</resources>
