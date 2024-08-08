@@ -28,3 +28,21 @@ jar -cvf testInterface.jar ./com/shin/testservice/*.class
 これでjarの中身が以下のようになっていればOK
 
 ![](/images/image2024-08-09-02-50-26.png)
+
+## 起動方法
+
+### testService
+
+```sh
+adb install -r -g testService.apk
+adb shell am start -n com.shin.testservice/.MainActivity -a com.shin.testservice.SERVICE_ACTION
+```
+
+### testActivity
+
+※ AndroidStudio上でインストール・起動をさせてたのでapkで起動しない可能性あり...
+
+```sh
+adb install -r -g testActivity.apk
+# 端末上で起動
+```
